@@ -1,2 +1,5 @@
 Blightreaper Thallid
 Grafted Butcher
+Burglar Rat
+Nezumi Informant
+Tangled Colony
