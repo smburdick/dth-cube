@@ -24,7 +24,7 @@ if [ "$1" == "init" ]; then
 fi
 if [ "$1" == "collate" ]; then
   # Iterate over the arrays and create the files
-  for str in "${colors[@]}"
+  for str in "${colors[@]}" # FIXME: deal with gold and colorless separately
   do
       for cmc in "${cmcs[@]}"
       do
