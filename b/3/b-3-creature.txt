@@ -14,3 +14,4 @@ Cabal Slaver
 Stronghold Assassin
 Plague Engineer
 Ayara, Widow of the Realm
+Vito, Thorn of the Dusk Rose

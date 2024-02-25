@@ -1,9 +1,5 @@
 Raff, Weatherlight Stalwart
 Vohar, Vodalian Desecrator
-Glissa, Herald of Predation
 Grenzo, Dungeon Warden
-Mizzix of the Izmagnus
-Vannifar, Evolved Enigma
-Grumgully, the Generous
-Liesa, Forgotten Archangel
-
+Unsettled Mariner
+Soaring Thought-Thief
