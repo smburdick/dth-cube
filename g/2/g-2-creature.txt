@@ -4,3 +4,9 @@ Thallid Shell-Dweller
 Elvish Vanguard
 Elvish Warmaster
 Elvish Visionary
+Muscle Sliver
+Hatchery Sliver
+Gemhide Sliver
+Venom Sliver
+Quick Sliver
+Spinneret Sliver

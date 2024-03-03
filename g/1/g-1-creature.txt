@@ -6,3 +6,4 @@ Quirion Ranger
 LLanowar Augur
 Arbor Elf
 Jaspera Sentinel
+Virulent Sliver

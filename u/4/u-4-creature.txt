@@ -7,3 +7,6 @@ Crookclaw Transmuter
 Echo Inspector
 Glen Elandra Archmage
 Mistbind Clique
+Telekinetic Sliver
+Shifting Sliver
+Mesmeric Sliver

@@ -1,7 +1,7 @@
 Sporeweb Weaver
 Thallid Germinator
 Undercellar Myconoid
-Rhys the Exalted
+Rhys the Exiled
 Elvish Archdruid
 Imperious Perfect
 Kithkin Mourncaller
@@ -9,3 +9,4 @@ Caller of the Untamed
 Verduran Enchantress
 Yavimaya Enchantress
 Setessan Champion
+Tempered Sliver

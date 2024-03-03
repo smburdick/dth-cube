@@ -7,3 +7,9 @@ Goblin Rabblemaster
 Goblin Warchief
 Pashalik Mons
 Sedge Sliver
+Belligerent Sliver
+Homing Sliver
+Barbed Sliver
+Blade Sliver
+Blur Sliver
+Hollowhead Sliver
