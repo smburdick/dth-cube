@@ -10,30 +10,36 @@ COLORS = list(map(lambda x: x.lower(), COLORS))
 CMCS = list(range(1,7))
 CARD_TYPES = ["creature", "enchantment", "artifact", "instant", "sorcery"]
 
-def cacheScryfallJSON():
+def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
   # Get all the creatures in local files
   cards = {}
+  if not os.path.exists("scryfall-cache"):
+    os.makedirs("scryfall-cache")
   for color in COLORS:
     for cmc in CMCS:
       for cardType in CARD_TYPES:
-        path = f"{color}/{cmc}/{color}-{cmc}-{cardType}.txt"
+        path = f"cards/{color}/{cmc}/{color}-{cmc}-{cardType}.txt"
         for cardName in open(path, "r").read().splitlines():
-          if cardName in cards or cardName.isspace(): # Skip duplicates and whitespace
+          if cardName in cards or cardName.isspace() or len(cardName) == 0: # Skip duplicates and whitespace
             continue
           apiCardName = cardName.replace(" ", "+").replace("//", "") # Replace spaces with + and remove slashes form double faced cards
           if not os.path.isfile("scryfall-cache/" + apiCardName + ".json"):
             time.sleep(0.1)
             api_url = f"https://api.scryfall.com/cards/named?fuzzy={apiCardName}"
-            last_request = time.time()
             response = requests.get(api_url)
             if response.status_code == 200:
               with open("scryfall-cache/" + apiCardName + ".json", "w+") as f:
-                f.write(response.text)
+                data = json.loads(response.text)
+                f.write(json.dumps(data, indent=2))
             else:
               print(f"Failed to cache {cardName} with status code {response.status_code}")
               continue
           data = open("scryfall-cache/" + apiCardName + ".json", "r").read()
-          cards[cardName] = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
+          data = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
+          if int(data.cmc) != cmc:
+            print(data.name, data.cmc, cmc)
+          # assert (data.colors[0].lower() == color) or (color == "gold" and len(data.colors) > 1)
+          cards[cardName] = data
   return cards
   
   

@@ -2,3 +2,5 @@ cube.txt
 bin/
 scryfall-cache/
 lib/
+lib
+pyvenv.cfg
