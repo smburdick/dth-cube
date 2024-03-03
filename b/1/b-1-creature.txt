@@ -8,3 +8,4 @@ Shambling Ghast
 Thieves' Guild Enforcer
 Faerie Dreamthief
 Facevaulter
+Shadowborn Apostle

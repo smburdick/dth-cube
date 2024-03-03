@@ -5,4 +5,7 @@ Boggart Mob
 Body Launderer
 Sling-Gang Lieutenant
 Gixian Puppeteer
-Archdemon of Paliano
+Boggart Mob
+Lazotep Sliver
+Toxin Sliver
+Vampiric Sliver

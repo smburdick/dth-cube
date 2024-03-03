@@ -6,3 +6,5 @@ Goblin Wardriver
 Mogg Maniac
 Battle Cry Goblin
 Smoldering Egg
+Heart Sliver
+Hunter Sliver

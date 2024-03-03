@@ -6,3 +6,4 @@ Goblin Chainwhirler
 Goblin Rabblemaster
 Goblin Warchief
 Pashalik Mons
+Sedge Sliver
