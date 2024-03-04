@@ -1,10 +1,10 @@
 Human
 Cleric
 Soldier
-Angels
+Angel
 
 Wizard
-Faeries
+Faerie
 Merfolk
 Sphinx
 
@@ -18,14 +18,12 @@ Demon
 
 Goblin
 Warrior
-Viashino
 Dwarf
 Dragon
 
-Saproling
+Fungus
 Elf
 Treefolk
-Cat
 Ooze
 Hydra
 

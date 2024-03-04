@@ -3,3 +3,6 @@ Sporemound
 Ambush Commander
 Brood Sliver
 Might Sliver
+Mycoloth
+Game-Trail Changeling
+Webweaver Changeling

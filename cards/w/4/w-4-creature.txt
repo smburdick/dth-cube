@@ -9,3 +9,4 @@ False Prophet
 Sidar Jibari
 Restoration Angel
 Heliod, the Radiant Dawn
+Pallid Mycoderm

@@ -9,3 +9,8 @@ Boggart Mob
 Lazotep Sliver
 Toxin Sliver
 Vampiric Sliver
+Thallid Omnivore
+Thallid Soothsayer
+Grinning Demon
+Spawn of Mayhem
+Graveshifter

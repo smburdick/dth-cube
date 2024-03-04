@@ -13,3 +13,6 @@ Barbed Sliver
 Blade Sliver
 Blur Sliver
 Hollowhead Sliver
+Dwarven Bloodboiler
+Dwarven Thaumaturgist
+Aether Membrane

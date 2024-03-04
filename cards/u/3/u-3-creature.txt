@@ -12,3 +12,5 @@ Gale, Waterdeep Prodigy
 Shadow Sliver
 Mnemonic Sliver
 Scuttling Sliver
+Mistwalker
+Psychic Membrane
