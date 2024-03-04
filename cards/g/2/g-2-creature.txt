@@ -17,3 +17,5 @@ Genesis Hydra
 Hooded Hydra
 Neverwinter Hydra
 Overgrown Battlement
+Bloodline Shaman
+Kappa Tech-Wrecker

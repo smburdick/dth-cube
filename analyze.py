@@ -63,9 +63,21 @@ def analyzeCreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
         # elif subtype != "" and not subtype.isspace():
         #   raise ValueError(f"Unknown subtype {subtype} in {card.name}")
   return creatureTypes
+
+def analyzeNoncreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
+  noncreatureTypes = ['Instant', 'Sorcery', 'Enchantment', 'Artifact']
+  noncreatureTypes = {type: 0 for type in noncreatureTypes}
+  for card in cards.values():
+    for type in noncreatureTypes:
+      if type in card.type_line:
+        noncreatureTypes[type] += 1
+  return noncreatureTypes
   
 if __name__ == "__main__":
   cardData = cacheScryfallJSON()
   data = analyzeCreatureTypes(cardData)
   data = {k: v for k, v in sorted(data.items(), key=lambda item: item[1])}
-  print(json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
+  print("creatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
+  data = analyzeNoncreatureTypes(cardData)
+  print("noncreatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
+  

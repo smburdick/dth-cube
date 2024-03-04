@@ -4,3 +4,5 @@ Serum Powder
 Crystal Shard
 Horn of Gondor
 Aethersphere Harvester
+Herald's Horn
+Icon of Ancestry

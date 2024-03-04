@@ -1,11 +1,15 @@
 Human
 Cleric
 Soldier
+Warrior
+Knight
 Angel
 
 Wizard
 Faerie
 Merfolk
+Cephalid
+Ninja
 Sphinx
 
 Phyrexian
@@ -24,11 +28,11 @@ Dragon
 Fungus
 Elf
 Treefolk
-Ooze
 Hydra
+
+Sliver
+Wall
 
 Spirit
 Shapeshifter
-Sliver
-Wall
-Eldrazi
+Construct
