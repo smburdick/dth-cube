@@ -50,6 +50,12 @@ def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
   return cards
 
 def analyzeCreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
+  EXCEPTIONS = [
+    "Era of Enlightenment // Hand of Enlightenment",
+    "Heliod, the Radiant Dawn // Heliod, the Warped Eclipse",
+    "The Kami War // O-Kagachi Made Manifest",
+    "Walking Bulwark"
+  ]
   creatureTypes = open("tribes.txt", "r").read().splitlines()
   for c in creatureTypes:
     if c.isspace() or len(c) == 0:
@@ -57,20 +63,26 @@ def analyzeCreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
   creatureTypes = {tribe: 0 for tribe in creatureTypes}
   for card in cards.values():
     if "Creature" in card.type_line:
+      sentinel = False
       for subtype in card.type_line.split("—")[1].split(" "):
+        if subtype == "" or subtype.isspace():
+          continue
         if subtype in creatureTypes:
           creatureTypes[subtype] += 1
-        # elif subtype != "" and not subtype.isspace():
-        #   raise ValueError(f"Unknown subtype {subtype} in {card.name}")
+          sentinel = True
+      if not sentinel and card.name not in EXCEPTIONS:
+        print(f"Failed to find subtype for {card.name}")
+
   return creatureTypes
 
 def analyzeNoncreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
   noncreatureTypes = ['Instant', 'Sorcery', 'Enchantment', 'Artifact']
   noncreatureTypes = {type: 0 for type in noncreatureTypes}
   for card in cards.values():
-    for type in noncreatureTypes:
-      if type in card.type_line:
-        noncreatureTypes[type] += 1
+    if "Creature" not in card.type_line:
+      for type in noncreatureTypes:
+        if type in card.type_line:
+          noncreatureTypes[type] += 1
   return noncreatureTypes
   
 if __name__ == "__main__":

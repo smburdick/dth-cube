@@ -20,3 +20,5 @@ A-Nezumi Prowler
 A-Dokuchi Silencer
 Blood-chin Rager
 Mindblade Render
+Malakir Blood-Priest
+Acquisitions Expert

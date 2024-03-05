@@ -1,10 +1,8 @@
-Sporeweb Weaver
 Thallid Germinator
 Undercellar Myconoid
 Rhys the Exiled
 Elvish Archdruid
 Imperious Perfect
-Kithkin Mourncaller
 Verduran Enchantress
 Yavimaya Enchantress
 Setessan Champion
@@ -16,3 +14,4 @@ Undercellar Myconid
 Realmwalker
 Managorger Hydra
 Lifeblood Hydra
+Edgewalker

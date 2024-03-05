@@ -8,16 +8,14 @@ Angel
 Wizard
 Faerie
 Merfolk
-Cephalid
 Ninja
+Rogue
 Sphinx
 
 Phyrexian
-Vampire
 Rat
 Faerie
-Rogue
-Cleric
+Vampire
 Demon
 
 Goblin

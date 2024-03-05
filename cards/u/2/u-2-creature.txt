@@ -11,7 +11,6 @@ Augur of Bolas
 Naban, Dean of Iteration
 Timestream Navigator
 Manic Scribe
-Vantress Gargoyle
 Tetsuko Umezawa, Fugitive
 Riptide Pilfirer
 Exit Specialist
@@ -29,3 +28,4 @@ Thopter Mechanic
 Thieving Skydiver
 A-Moon-Circuit Hacker
 Spellstutter Sprite
+Nimble Trapfinder

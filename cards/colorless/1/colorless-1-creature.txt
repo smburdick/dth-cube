@@ -1,7 +1,5 @@
-Haywire Mite
 Excavated Wall
 Universal Automaton
-Gingerbrute
 Bomat Courier
 Walking Bulwark
 Combat Courier

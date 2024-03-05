@@ -26,3 +26,4 @@ Plague Engineer
 A-Nashi, Moon Sage's Scion
 Blood-Chin Fanatic
 Thieving Sprite
+Cabal Archon

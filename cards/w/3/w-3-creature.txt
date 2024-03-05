@@ -22,3 +22,5 @@ Digsite Engineer
 Master Trinketeer
 Mirror Entity
 Avian Changeling
+Master Apothecary
+Righteous Valkyrie
