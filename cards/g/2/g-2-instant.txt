@@ -6,3 +6,6 @@ Prizefight
 Setessan Tactics
 Sylvan Smite
 Skyshroud Ambush
+Gaea's Gift
+Colossal Growth
+Strength in Numbers

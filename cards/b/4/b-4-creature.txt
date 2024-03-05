@@ -15,4 +15,5 @@ Grinning Demon
 Spawn of Mayhem
 Graveshifter
 Blaring Captain
-
+Ashcoat of the Shadow Swarm
+Barbed Servitor

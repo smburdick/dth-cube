@@ -9,3 +9,6 @@ Khalni Ambush
 Wolf Strike
 Windswift Slice
 Clear Shot
+Stampede
+Ruthless Instincts
+Wild Hunger

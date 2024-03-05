@@ -3,10 +3,10 @@ import os
 import time
 import json
 from types import SimpleNamespace
+import matplotlib.pyplot as plt
 
 BUDGET_USD = 5
 COLORS = ["W", "U", "B", "R", "G", "GOLD", "COLORLESS"]
-COLORS = list(map(lambda x: x.lower(), COLORS))
 CMCS = list(range(1,7))
 CARD_TYPES = ["creature", "enchantment", "artifact", "instant", "sorcery"]
 
@@ -15,7 +15,7 @@ def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
   cards = {}
   if not os.path.exists("scryfall-cache"):
     os.makedirs("scryfall-cache")
-  for color in COLORS:
+  for color in list(map(lambda x: x.lower(), COLORS)):
     for cmc in CMCS:
       for cardType in CARD_TYPES:
         path = f"cards/{color}/{cmc}/{color}-{cmc}-{cardType}.txt"
@@ -79,11 +79,31 @@ def analyzeNoncreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]
   noncreatureTypes = ['Instant', 'Sorcery', 'Enchantment', 'Artifact']
   noncreatureTypes = {type: 0 for type in noncreatureTypes}
   for card in cards.values():
-    if "Creature" not in card.type_line:
-      for type in noncreatureTypes:
-        if type in card.type_line:
-          noncreatureTypes[type] += 1
+    for type in noncreatureTypes:
+      if type in card.type_line:
+        noncreatureTypes[type] += 1
   return noncreatureTypes
+
+def analyzeColorDistribution(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
+  colorDistribution = {color: 0 for color in COLORS}
+  colorDistribution["GOLD"] = {}
+  for card in cards.values():
+    if len(card.color_identity) == 0:
+      colorDistribution["COLORLESS"] += 1
+    elif len(card.color_identity) > 1:
+      s = str(frozenset(set(card.color_identity)))
+      colorDistribution["GOLD"][s] = colorDistribution["GOLD"].get(s, 0) + 1
+    else:
+      color = card.color_identity[0]
+      colorDistribution[color] += 1
+  data = colorDistribution["GOLD"].copy()
+  print("gold distribution: ", json.dumps(data, indent=2))
+  _, ax = plt.subplots()
+  colorDistribution.pop("GOLD")
+  colorDistribution.pop("COLORLESS")
+  ax.bar(colorDistribution.keys(), colorDistribution.values())
+  plt.show()
+  return colorDistribution
   
 if __name__ == "__main__":
   cardData = cacheScryfallJSON()
@@ -92,4 +112,4 @@ if __name__ == "__main__":
   print("creatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
   data = analyzeNoncreatureTypes(cardData)
   print("noncreatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
-  
+  data = analyzeColorDistribution(cardData)

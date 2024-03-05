@@ -24,3 +24,4 @@ Mirror Entity
 Avian Changeling
 Master Apothecary
 Righteous Valkyrie
+Lingering Souls
