@@ -10,8 +10,9 @@ Intimidator Initiate
 Goblin Glory Chaser
 Striking Sliver
 Spark Mage
-Dwarven Armorer
 Reinforced Ronin
 Goblin Tomb Raider
 Krark-Clan Shaman
 Exuberant Fuseling
+Warbreak Trumpeter
+Goblin Taskmaster

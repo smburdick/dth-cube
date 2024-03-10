@@ -20,12 +20,14 @@ Demon
 
 Goblin
 Warrior
-Dwarf
+Giant
+Berserker
 Dragon
 
 Fungus
 Elf
 Treefolk
+Beast
 Hydra
 
 Sliver

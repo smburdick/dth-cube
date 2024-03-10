@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# Array of strings
 colors=("w" "u" "b" "r" "g" "gold" "land" "colorless")
 cmcs=(1 2 3 4 5 6)
 types=(creature enchantment artifact instant sorcery)
-
-args=("$@")
 
 # If the first argument is "init", then create the files
 if [ "$1" == "init" ]; then
@@ -23,6 +20,7 @@ if [ "$1" == "init" ]; then
   done
 fi
 if [ "$1" == "collate" ]; then
+  rm cube.txt
   # Iterate over the arrays and create the files
   for str in "${colors[@]}" # FIXME: deal with gold and colorless separately
   do
@@ -30,10 +28,8 @@ if [ "$1" == "collate" ]; then
       do
           for type in "${types[@]}"
           do
-            cat $str/$cmc/$str-$cmc-$type.txt >> cube.txt
+            cat cards/$str/$cmc/$str-$cmc-$type.txt >> cube.txt
           done
       done
   done
 fi
-
-

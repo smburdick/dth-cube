@@ -1,5 +1,4 @@
 Thallid Germinator
-Undercellar Myconoid
 Rhys the Exiled
 Elvish Archdruid
 Imperious Perfect
@@ -15,3 +14,6 @@ Realmwalker
 Managorger Hydra
 Lifeblood Hydra
 Edgewalker
+Rift Sower
+Gemrazer
+Bloated Contaminator

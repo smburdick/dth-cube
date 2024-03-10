@@ -23,3 +23,9 @@ Mindblade Render
 Malakir Blood-Priest
 Acquisitions Expert
 Piper of the Swarm
+Dauthi Voidwalker
+Nether Traitor
+Dauthi Slayer
+Nezumi Shortfang
+Swarm of Rats
+Asylum Visitor

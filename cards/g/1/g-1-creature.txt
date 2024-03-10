@@ -8,3 +8,6 @@ Arbor Elf
 Jaspera Sentinel
 Virulent Sliver
 Deathbonnet Sprout
+Birchlore Rangers
+Elvish Handservant
+Venerated Rotpriest

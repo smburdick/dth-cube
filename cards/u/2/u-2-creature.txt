@@ -12,7 +12,7 @@ Naban, Dean of Iteration
 Timestream Navigator
 Manic Scribe
 Tetsuko Umezawa, Fugitive
-Riptide Pilfirer
+Riptide Pilferer
 Exit Specialist
 Diffusion Sliver
 Winged Sliver
@@ -29,3 +29,5 @@ Thieving Skydiver
 A-Moon-Circuit Hacker
 Spellstutter Sprite
 Nimble Trapfinder
+Thalakos Seer
+Looter il-Kor

@@ -12,8 +12,6 @@ Barbed Sliver
 Blade Sliver
 Blur Sliver
 Hollowhead Sliver
-Dwarven Bloodboiler
-Dwarven Thaumaturgist
 Aether Membrane
 Laelia, the Blade Reforged
 Hedron Detonator
@@ -24,3 +22,10 @@ Relic Robber
 Krark-Clan Grunt
 Forgehammer Centurion
 Alesha, Who Smiles at Death
+Unstable Hulk
+Skirk Commando
+Bonecrusher Giant
+Death-Greeter's Champion
+Goblin Rabblemaster
+Anje's Ravager
+Markov Blademaster

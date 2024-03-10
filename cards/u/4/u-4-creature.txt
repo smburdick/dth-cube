@@ -4,7 +4,7 @@ Riptide Director
 Latchkey Faerie
 Crookclaw Transmuter
 Echo Inspector
-Glen Elandra Archmage
+Glen Elendra Archmage
 Mistbind Clique
 Telekinetic Sliver
 Shifting Sliver
@@ -16,3 +16,4 @@ Phyrexian Metamorph
 Faerie Artisans
 Master Transmuter
 Braids, Conjurer Adept
+Thalakos Deceiver

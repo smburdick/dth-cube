@@ -3,3 +3,4 @@ Fortuitous Find
 Recover
 Rogues' Gallery
 Path of Peril
+Ichor Slick

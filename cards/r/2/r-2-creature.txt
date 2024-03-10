@@ -10,7 +10,6 @@ Heart Sliver
 Hunter Sliver
 Two-Headed Sliver
 Bladeback Sliver
-Seven Dwarves
 Magda, Brazen Outlaw
 Erebor Flamesmith
 Electrostatic Infantry
@@ -21,3 +20,8 @@ Sokenzan Smelter
 Kargan Intimidator
 Goma Fada Vanguard
 Kargan Dragonlord
+Jeering Instigator
+Horde Ambusher
+Fugitive Codebreaker
+Earthshaker Khenra
+Cemetery Gatekeeper
