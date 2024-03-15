@@ -3,3 +3,6 @@ Forbid
 Spell Crumple
 Stoic Rebuttal
 Suit Up
+Broken Concentration
+Circular Logic
+Chilling Grasp

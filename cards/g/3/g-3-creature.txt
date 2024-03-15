@@ -15,5 +15,7 @@ Managorger Hydra
 Lifeblood Hydra
 Edgewalker
 Rift Sower
-Gemrazer
 Bloated Contaminator
+Sentinel of the Nameless City
+Reclamation Sage
+Polukranos Reborn

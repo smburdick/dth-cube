@@ -1,3 +1,5 @@
 Risk Factor
 Demon Bolt
 Delayed Blast Fireball
+Abandon Reason
+Fiery Temper

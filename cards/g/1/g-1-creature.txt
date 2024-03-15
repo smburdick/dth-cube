@@ -11,3 +11,4 @@ Deathbonnet Sprout
 Birchlore Rangers
 Elvish Handservant
 Venerated Rotpriest
+Llanowar Mentor

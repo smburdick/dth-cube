@@ -38,3 +38,4 @@ Geth, Thane of Contracts
 Relentless Rats
 Big Game Hunter
 Markov Baron
+Bog Witch

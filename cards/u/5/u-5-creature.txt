@@ -9,3 +9,5 @@ Sphinx of Clear Skies
 Senator Peacock
 Research Thief
 Infiltrator il-Kor
+Mist Dancer
+Prognostic Sphinx

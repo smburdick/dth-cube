@@ -31,3 +31,9 @@ Spellstutter Sprite
 Nimble Trapfinder
 Thalakos Seer
 Looter il-Kor
+Coralhelm Commander
+Vodalian Hexcatcher
+Merfolk Trickster
+Ghostly Pilferer
+Waterfront Bouncer
+Escape Artist

@@ -29,3 +29,5 @@ Death-Greeter's Champion
 Goblin Rabblemaster
 Anje's Ravager
 Markov Blademaster
+Stromkirk Occultist
+Skophos Reaver

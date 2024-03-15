@@ -10,4 +10,5 @@ Throat Slitter
 Marrow-Gnawer
 Soul Collector
 Phyrexian Plaguelord
-
+Bloodlord of Vaasgoth
+Voldaren Pariah

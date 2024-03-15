@@ -9,6 +9,13 @@ BUDGET_USD = 5
 COLORS = ["W", "U", "B", "R", "G", "GOLD", "COLORLESS"]
 CMCS = list(range(1,7))
 CARD_TYPES = ["creature", "enchantment", "artifact", "instant", "sorcery"]
+EXCEPTIONS = [
+  "Era of Enlightenment // Hand of Enlightenment",
+  "Heliod, the Radiant Dawn // Heliod, the Warped Eclipse",
+  "The Kami War // O-Kagachi Made Manifest",
+  "Walking Bulwark",
+  "Okiba Reckoner Raid // Nezumi Road Captain"
+]
 
 def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
   # Get all the creatures in local files
@@ -23,26 +30,26 @@ def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
           if cardName in cards or cardName.isspace() or len(cardName) == 0: # Skip duplicates and whitespace
             continue
           apiCardName = cardName.replace(" ", "+").replace("//", "") # Replace spaces with + and remove slashes form double faced cards
-          if not os.path.isfile("scryfall-cache/" + apiCardName + ".json"):
+          fname = "scryfall-cache/" + apiCardName + ".json"
+          if not os.path.isfile(fname):
             time.sleep(0.05)
             api_url = f"https://api.scryfall.com/cards/named?fuzzy={apiCardName}"
             response = requests.get(api_url)
             if response.status_code == 200:
-              with open("scryfall-cache/" + apiCardName + ".json", "w+") as f:
+              with open(fname, "w+") as f:
                 data = json.loads(response.text)
                 f.write(json.dumps(data, indent=2))
             else:
               print(f"Failed to cache {cardName} with status code {response.status_code}")
               continue
-          data = open("scryfall-cache/" + apiCardName + ".json", "r").read()
+          data = open(fname, "r").read()
           data = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
-          priceOptions = ["usd", "usd_foil", "usd_etched", "usd_foil_etched"]
-          # TODO: Add price filtering
-          # for p in priceOptions:
-          #   if p in data.prices:
-          #     if float(data.prices[p]) > BUDGET_USD:
-          #       print(f"Skipping {cardName} with price {data.prices.usd}")
-          #       continue
+          priceData = data.prices
+          prices = [priceData.usd, priceData.usd_foil, priceData.usd_etched]
+          isOverbudget = all([p != None and float(p) > BUDGET_USD for p in prices])
+          if isOverbudget:
+            print(f"{cardName} is over-budget.")
+            continue
           if int(data.cmc) != cmc:
             print(data.name, int(data.cmc), cmc)
           # assert (data.colors[0].lower() == color) or (color == "gold" and len(data.colors) > 1)
@@ -50,12 +57,6 @@ def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
   return cards
 
 def analyzeCreatureTypes(cards: dict[str, SimpleNamespace]) -> dict[str, int]:
-  EXCEPTIONS = [
-    "Era of Enlightenment // Hand of Enlightenment",
-    "Heliod, the Radiant Dawn // Heliod, the Warped Eclipse",
-    "The Kami War // O-Kagachi Made Manifest",
-    "Walking Bulwark"
-  ]
   creatureTypes = open("tribes.txt", "r").read().splitlines()
   for c in creatureTypes:
     if c.isspace() or len(c) == 0:
