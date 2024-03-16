@@ -31,3 +31,7 @@ Anje's Ravager
 Markov Blademaster
 Stromkirk Occultist
 Skophos Reaver
+Ghitu Slinger
+Countryside Crusher
+Shatterskull Charger
+Concert Kaboomist

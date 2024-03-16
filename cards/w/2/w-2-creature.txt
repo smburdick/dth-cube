@@ -29,3 +29,5 @@ Jeskai Barricade
 Shimmering Barrier
 Kithkin Greatheart
 Guardian of New Benalia
+Knight of the Holy Nimbus
+Unyielding Gatekeeper

@@ -25,3 +25,5 @@ Vengeful Reaper
 Nightshade Assassin
 Kalitas, Traitor of Ghet
 Vampire Nocturnus
+Bounty Hunter
+Orc Sureshot

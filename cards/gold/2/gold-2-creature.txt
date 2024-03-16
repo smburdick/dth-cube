@@ -26,3 +26,4 @@ Rushblade Commander
 General's Enforcer
 Sygg, River Cutthroat
 Sygg, River Guide
+Arcus Acolyte
