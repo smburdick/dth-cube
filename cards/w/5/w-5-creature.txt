@@ -11,3 +11,4 @@ Battletide Alchemist
 Catapult Master
 Ancestor's Prophet
 Pentarch Paladin
+Karona's Zealot

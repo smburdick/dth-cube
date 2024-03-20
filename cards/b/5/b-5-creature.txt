@@ -12,3 +12,4 @@ Soul Collector
 Phyrexian Plaguelord
 Bloodlord of Vaasgoth
 Voldaren Pariah
+Gift of Doom

@@ -35,3 +35,4 @@ Stromkirk Condemned
 Cabal Initiate
 A-Orchish Bowmasters
 A-Skemfar Avenger
+Golgari Thug

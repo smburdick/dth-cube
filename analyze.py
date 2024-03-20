@@ -5,6 +5,12 @@ import json
 from types import SimpleNamespace
 import matplotlib.pyplot as plt
 
+DEBUG = False
+
+def log(*msg):
+  if DEBUG:
+    print(msg)
+
 BUDGET_USD = 5
 COLORS = ["W", "U", "B", "R", "G", "GOLD", "COLORLESS"]
 CMCS = list(range(1,7))
@@ -48,10 +54,10 @@ def cacheScryfallJSON() -> dict[str, SimpleNamespace]:
           prices = [priceData.usd, priceData.usd_foil, priceData.usd_etched]
           isOverbudget = all([p != None and float(p) > BUDGET_USD for p in prices])
           if isOverbudget:
-            print(f"{cardName} is over-budget.")
+            log(f"{cardName} is over-budget.")
             continue
           if int(data.cmc) != cmc:
-            print(data.name, int(data.cmc), cmc)
+            log(data.name, int(data.cmc), cmc)
           # assert (data.colors[0].lower() == color) or (color == "gold" and len(data.colors) > 1)
           cards[cardName] = data
   return cards
@@ -98,7 +104,7 @@ def analyzeColorDistribution(cards: dict[str, SimpleNamespace]) -> dict[str, int
       color = card.color_identity[0]
       colorDistribution[color] += 1
   data = colorDistribution["GOLD"].copy()
-  print("gold distribution: ", json.dumps(data, indent=2))
+  log("gold distribution: ", json.dumps(data, indent=2))
   _, ax = plt.subplots()
   colorDistribution.pop("GOLD")
   colorDistribution.pop("COLORLESS")
@@ -110,7 +116,7 @@ if __name__ == "__main__":
   cardData = cacheScryfallJSON()
   data = analyzeCreatureTypes(cardData)
   data = {k: v for k, v in sorted(data.items(), key=lambda item: item[1])}
-  print("creatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
+  log("creatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
   data = analyzeNoncreatureTypes(cardData)
-  print("noncreatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
+  log("noncreatures: ", json.dumps(data, indent=2), "\ntotal: ", sum(map(lambda x: x[1], data.items())))
   data = analyzeColorDistribution(cardData)
