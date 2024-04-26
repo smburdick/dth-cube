@@ -12,3 +12,4 @@ Infiltrator il-Kor
 Mist Dancer
 Prognostic Sphinx
 Vesuvan Shapeshifter
+Marauding Sphinx

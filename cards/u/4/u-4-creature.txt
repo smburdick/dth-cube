@@ -21,3 +21,4 @@ Seafloor Oracle
 Kheru Spellsnatcher
 Mistfire Weaver
 Nameless One
+Stoic Sphinx

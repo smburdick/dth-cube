@@ -68,11 +68,7 @@ Colorless: Constructs (Eldrazi)
 
 ## Pack Composition
 
-15 cards chosen from the singleton WUBRG + Gold + Colorless spell mix
 
-Optional:
-1 Land chosen from the singleton land mix
-1 conspiracy card chosen from 3 of each common, 2 of each uncommon, 1 of each rare.
 
 ## Errata
 
